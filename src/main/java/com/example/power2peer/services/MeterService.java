@@ -3,6 +3,7 @@ package com.example.power2peer.services;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -15,6 +16,7 @@ import com.example.power2peer.models.Meter;
 import com.example.power2peer.repositories.MeterRepository;
 
 @RestController
+@CrossOrigin(origins="*")
 public class MeterService {
 	@Autowired
 	MeterRepository meterRepository;
